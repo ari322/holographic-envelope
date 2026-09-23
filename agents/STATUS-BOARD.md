@@ -3,12 +3,12 @@
 # Human reviewer: check this file to monitor parallel progress
 
 | Agent | Last completed | Next task | Blocked |
-|-------|---------------|-----------|--------|
+|-------|---------------|-----------|---------|
 | MATHEMATICIAN  | reparameterisation.md (queue complete: coupling + frustration + Sigma + reparam) | DONE | NO |
 | SIMULATOR      | Role 02 pack: grasshopper-complete.md + facade-sim.py + rsb-detection.py + SYNTHETIC synthetic-pareto.json (2026-09-23) | DONE | NO |
-| MATERIALS      | spore-data-survey.md + fabrication-protocol.md | test-protocol.md | NO |
+| MATERIALS      | spore-data-survey + fabrication-protocol + test-protocol + alternatives (ROLE 03 complete) | DONE | NO |
 | THEORIST       | TFE-Kolmogorov.md; BIR-limits.md; frustration-RL.md; BIR-greater-than-one.md | DONE | NO |
-| WRITER         | abstract-v1.md + introduction-v1.md | press-summary.md | NO |
+| WRITER         | abstract-v1 + introduction-v1 + press-summary + conference-abstract (ROLE 05 complete) | DONE | NO |
 | OCTOPUS-BRIDGE | full ROLE 06 design pack (TFE + Hamiltonian + BIR + integration-proposal) | DONE (queue empty — awaiting owner review) | NO |
 | CRITIC         | unsupported-claims + failure-modes + hostile-review + BIR-critique + spin-glass-critique + pr-review-1-6 (all ROLE 07 tasks) | DONE | NO |
 
@@ -84,7 +84,7 @@ Wake pack (`unsupported-claims.md`, `failure-modes.md`, `hostile-review.md`) cop
 All four Role 02 deliverables are in `agents/simulator/`. Next task = DONE.
 
 | File | Role 02 task |
-|------|----------------|
+|------|-------------|
 | `grasshopper-complete.md` | Task 1 — full 5-step GH node sequence (02/03/05 filled in) |
 | `facade-sim.py` | Task 2 — standalone controller |
 | `rsb-detection.py` | Task 3 — GMM + Hartigan dip |
@@ -103,10 +103,22 @@ SYNTHETIC reminder: `synthetic-pareto.json` is constructed (two planted gene fam
 
 ---
 
+
+## LAND #8/#10/#11 without cloud agent — 2026-09-23 ~18:00 AEST
+
+Owner had no Cursor cloud tokens. Remaining deliverables from open PR heads were committed directly to `main` via GitHub API (not squash-merge of conflicted branches):
+
+- PR #8 → `agents/materials/test-protocol.md`
+- PR #10 → `agents/writer/press-summary.md`, `agents/writer/conference-abstract.md`
+- PR #11 → `agents/materials/alternatives.md`
+
+All seven ROLE queues are now DONE on the board. Conflict log below is unchanged (still OPEN). RSB remains PREDICTED / unconfirmed. No coupons or Wallacei runs claimed.
+
+---
 ## Conflict Log
 
 | Conflict ID | Description | Raised by | Status |
-|------------|-------------|-----------|--------|
+|------------|-------------|------------|--------|
 | J-arch-jacobian-mismatch | published J^arch != (1/4)F^T F | MATHEMATICIAN | OPEN |
 | frustration-convention-mismatch | AF-triangle narrative vs H=-sum J ss | MATHEMATICIAN | OPEN |
 | CRITIC-C08 | J(d,a)=-1/2 gloss "both reduce radiation" vs Jacobian (a raises f1) | CRITIC | open |
