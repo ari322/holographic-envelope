@@ -4,7 +4,7 @@
 
 | Agent | Last completed | Next task | Blocked |
 |-------|---------------|-----------|--------|
-| MATHEMATICIAN  | — (not started) | coupling-matrix-derivation.md | NO |
+| MATHEMATICIAN  | coupling-matrix-derivation.md (Jacobian re-derivation + conflict note) | frustration-proof.md | NO |
 | SIMULATOR      | — (not started) | grasshopper-complete.md | NO |
 | MATERIALS      | — (not started) | spore-data-survey.md | NO |
 | THEORIST       | — (not started) | TFE-Kolmogorov.md | NO |
