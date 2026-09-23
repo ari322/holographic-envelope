@@ -12,6 +12,7 @@
 - Controls: homogeneous array + random array
 - Log: angle, aperture, response time, recovery time, hysteresis
 - Artifacts: CSV + time-lapse/animation
+- Results (SYNTHETIC_DEMO only): `experiments/p1-synth-demo-20260923/` — run_id `p1-20260923-synth-demo-v1`; candidates T3/T4/T6 (≥3/5); not intelligence proved; not EPW.
 
 ## P2 — Material & spatial memory
 - Two-history test (different histories → same final input → compare outputs)
