@@ -11,8 +11,8 @@ Files:
     BIR-for-agents.md           Way 3 — BIR as boundary / interior ratio
     integration-proposal.md     when (not now) to connect the two systems
 
-ROLE 06 tasks 1–5 in this folder are written. Next step is owner review of
-the pack, not implementation.
+ROLE 06 design-doc set is complete (queue empty). Awaiting owner review.
+No further octopus-bridge design docs. Do not invent extra discovery docs.
 
 Rules for this folder:
 

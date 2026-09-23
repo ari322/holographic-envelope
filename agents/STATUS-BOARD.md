@@ -9,7 +9,7 @@
 | MATERIALS      | — (not started) | spore-data-survey.md | NO |
 | THEORIST       | — (not started) | TFE-Kolmogorov.md | NO |
 | WRITER         | — (not started) | abstract-v1.md | NO |
-| OCTOPUS-BRIDGE | BIR-for-agents.md + integration-proposal.md (design docs) | owner review of bridge design pack | NO |
+| OCTOPUS-BRIDGE | full ROLE 06 design pack (TFE + Hamiltonian + BIR + integration-proposal) | DONE (queue empty — awaiting owner review) | NO |
 | CRITIC         | — (not started) | unsupported-claims.md | NO |
 
 ---
