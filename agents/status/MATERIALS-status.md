@@ -1,0 +1,6 @@
+## MATERIALS Status — 2026-09-23
+Current task: ROLE 03 humidity-chamber test protocol (task 3 of 4)
+Last output: agents/materials/spore-data-survey.md ; agents/materials/fabrication-protocol.md ; agents/materials/test-protocol.md
+Next task: agents/materials/alternatives.md (three non-spore actuator replacements if D03 fails)
+Blocked by: NONE
+Conflict detected: YES — documentation conflict only, not an inter-agent file clash. AI-CONTEXT.md D03 overstates Chen 2015 cycle life as "100% stable" over 1e6 cycles, names cork as the 2025 optimal substrate, specifies spin-coat + 40 C / 2 h + parylene, and writes theta_max = f(n_layers) as unbounded monotone. Verified literature (Chen 2014 DOI 10.1038/nnano.2013.290; Chen 2015 DOI 10.1038/ncomms8346; Birch 2021 DOI 10.3390/su13074030) supports latex/polyimide/silicon/elastomer, pipette+rock air-dry at ~40-42% RH, 10 latex cycles, slight (not 100%) HYDRA elongation loss after 1e6 cycles, and angle plateau by ~4 monolayers. test-protocol.md therefore uses Birch 24 h / >95% RH, ~42% <-> >95% RH, <3 min latex deflection, tracing/protractor, Stoney N/m, paper-load lift, and >=10 local cycles; Chen 2015 ~3 s and 1e6 cycles are context only and are not claimed for latex. No agents/conflicts/ file written (this pass is limited to agents/materials/, agents/status/, and the STATUS-BOARD MATERIALS row).
