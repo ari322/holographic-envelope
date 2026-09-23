@@ -5,7 +5,7 @@
 | Agent | Last completed | Next task | Blocked |
 |-------|---------------|-----------|--------|
 | MATHEMATICIAN  | reparameterisation.md (queue complete: coupling + frustration + Sigma + reparam) | DONE | NO |
-| SIMULATOR      | — (not started) | grasshopper-complete.md | NO |
+| SIMULATOR      | Role 02 pack: grasshopper-complete.md + facade-sim.py + rsb-detection.py + SYNTHETIC synthetic-pareto.json (2026-09-23) | DONE | NO |
 | MATERIALS      | spore-data-survey.md + fabrication-protocol.md | test-protocol.md | NO |
 | THEORIST       | TFE-Kolmogorov.md; BIR-limits.md; frustration-RL.md; BIR-greater-than-one.md | DONE | NO |
 | WRITER         | abstract-v1.md + introduction-v1.md | press-summary.md | NO |
@@ -75,6 +75,31 @@ Mathematician should re-derive J and Phi before anyone treats sigma* as a predic
 Queue empty. No open next work. Octopus not touched. Other agent rows left as on main (not invented).
 
 Wake pack (`unsupported-claims.md`, `failure-modes.md`, `hostile-review.md`) copied from PR #5 without rewrite. Wave 2: `BIR-critique.md`, `spin-glass-critique.md`, `pr-review-1-6.md`.
+
+---
+
+
+## SIMULATOR Role 02 notes (2026-09-23) — queue empty
+
+All four Role 02 deliverables are in `agents/simulator/`. Next task = DONE.
+
+| File | Role 02 task |
+|------|----------------|
+| `grasshopper-complete.md` | Task 1 — full 5-step GH node sequence (02/03/05 filled in) |
+| `facade-sim.py` | Task 2 — standalone controller |
+| `rsb-detection.py` | Task 3 — GMM + Hartigan dip |
+| `synthetic-pareto.json` | Task 4 — **SYNTHETIC** 5x50 fixture |
+
+Also: `generate_synthetic_pareto.py`, `README.md`, `requirements.txt`.
+
+How to run:
+
+```
+python agents/simulator/facade-sim.py
+python agents/simulator/rsb-detection.py
+```
+
+SYNTHETIC reminder: `synthetic-pareto.json` is constructed (two planted gene families). It is not Wallacei output and is not evidence for RSB / D02. Demo weather in `facade-sim.py` is labelled `SYNTHETIC_DEMO` when no EPW file is present. f1/f2 are geometric proxies, not Ladybug/Honeybee.
 
 ---
 
