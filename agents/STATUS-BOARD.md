@@ -4,7 +4,7 @@
 
 | Agent | Last completed | Next task | Blocked |
 |-------|---------------|-----------|--------|
-| MATHEMATICIAN  | frustration-proof.md (triangle (eps,ms,wr) + convention note) | complexity-function.md | NO |
+| MATHEMATICIAN  | reparameterisation.md (queue complete: coupling + frustration + Sigma + reparam) | DONE | NO |
 | SIMULATOR      | — (not started) | grasshopper-complete.md | NO |
 | MATERIALS      | — (not started) | spore-data-survey.md | NO |
 | THEORIST       | — (not started) | TFE-Kolmogorov.md | NO |
@@ -18,7 +18,8 @@
 
 | Conflict ID | Description | Raised by | Status |
 |------------|-------------|-----------|--------|
-| — | no conflicts yet | — | — |
+| J-arch-jacobian-mismatch | published J^arch != (1/4)F^T F | MATHEMATICIAN | OPEN |
+| frustration-convention-mismatch | AF-triangle narrative vs H=-sum J ss | MATHEMATICIAN | OPEN |
 
 ---
 
