@@ -10,7 +10,7 @@
 | THEORIST       | — (not started) | TFE-Kolmogorov.md | NO |
 | WRITER         | — (not started) | abstract-v1.md | NO |
 | OCTOPUS-BRIDGE | — (not started) | TFE-for-agents.md | NO |
-| CRITIC         | — (not started) | unsupported-claims.md | NO |
+| CRITIC         | all ROLE 07 tasks + pr-review-1-6 (wake pack on PR #5; BIR-critique, spin-glass-critique, pr-review-1-6 here) | DONE | NO |
 
 ---
 
