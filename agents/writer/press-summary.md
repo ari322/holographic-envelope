@@ -1,0 +1,16 @@
+# A Skin That Records the Room
+
+**Intended outlets:** Dezeen; The Architectural Review; ArchDaily  
+**Word count:** 516
+
+Building skins are usually judged by energy — heat rejected, daylight admitted — not by whether the exterior holds information about the rooms behind it. A shut facade and a mixed-state facade can post the same kilowatt-hour total. The first is silent; the second is not. Four quantities make that difference measurable. They are definitions and predictions, not construction results.
+
+The first is Temporal Facade Entropy. Each panel occupies a discrete state. Shannon entropy H_space(t) of the panel-state shares is spatial diversity at time t, in bits. The same measure for one panel over time is H_time(i). Their product TFE(i, t) = H_space(t) × H_time(i) ranges over [0, log2(N) × log2(T)]. Zero means every panel is the same, always. A static curtain wall is identically zero. A rule-based or optimised skin is predicted to sit strictly above that floor, in that order — a test, not a published measurement.
+
+The second quantity shows why one optimisation run is a poor report of a facade. Six genes — depth, aperture, rotation, hysteresis, maximum step, radiation weight — are rescaled to σ ∈ [−1, +1]^6. Those genes couple into a matrix J^arch and an architectural Ising energy H_facade(σ) = −∑_{i<j} J^arch_ij · σ_i · σ_j − ∑_i h_i · σ_i + λ·P(σ). Hysteresis ε, step size Δs, and radiation weight wr form a frustrated triangle (product of pairwise signs −1), so all three cannot be satisfied. That geometry yields many local minima and predicts that different random starts can return different Pareto families. A protocol to detect that replica-symmetry-breaking signature in pairwise gene distances has not been run; replica-symmetry breaking is not confirmed.
+
+The third quantity is a material route, not a product. Bacillus subtilis spores swell and shrink with humidity. A cork panel with n_i spore monolayers has maximum bend θ_max(i) = f(n_i), approximated as θ_max ≈ α · n_i pending calibration. The angle relaxes as θ(i, t) = θ_max(i) · (1 − exp(−t/τ)) with τ ≈ 180 s. Different layer counts let humidity drive a spatial mix of states, so H_space(t) > 0 and TFE is positive at zero operational energy when humidity leaves its reference. Cork (Quercus suber) is the stated substrate. No panels have been built.
+
+The fourth quantity asks how much of the interior is written on the skin. Interior entropy H_interior(t) is Shannon entropy of occupancy, zone temperature, and activity. Surface entropy is H_boundary(t) = H_space(t). Their ratio BIR(t) = H_boundary(t) / H_interior(t) is capped on [0, 1]. Zero is a blind envelope. Approaching one is the design target: the facade encodes as much information as the rooms generate. The Bekenstein–Hawking formula S_BH = A / (4 · l_p²) is cited only as a reminder that boundary area can carry interior information. BIR is a macroscale analogy. It is not derived from AdS/CFT.
+
+Layer gradients are proposed to generate TFE; TFE over interior entropy is BIR; H_facade is the predicted selector of which design family raises BIR. Until Wallacei, cork calibration, and a sensor-side BIR log are executed, the framework is a measurement language for skins that do more than spend energy.

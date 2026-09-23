@@ -8,7 +8,7 @@
 | SIMULATOR      | — (not started) | grasshopper-complete.md | NO |
 | MATERIALS      | — (not started) | spore-data-survey.md | NO |
 | THEORIST       | — (not started) | TFE-Kolmogorov.md | NO |
-| WRITER         | — (not started) | abstract-v1.md | NO |
+| WRITER         | press-summary.md + conference-abstract.md (abstract-v1.md + introduction-v1.md already done) | DONE | NO |
 | OCTOPUS-BRIDGE | — (not started) | TFE-for-agents.md | NO |
 | CRITIC         | — (not started) | unsupported-claims.md | NO |
 
