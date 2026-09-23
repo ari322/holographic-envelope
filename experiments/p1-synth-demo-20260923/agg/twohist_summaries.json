@@ -1,0 +1,56 @@
+{
+  "T2": {
+    "treat_id": "T2",
+    "mean_abs_delta_theta": 0.0,
+    "mean_abs_delta_aperture": 0.0,
+    "max_abs_delta_theta": 0.0,
+    "max_abs_delta_aperture": 0.0,
+    "eps_theta_deg": 0.5,
+    "eps_aperture": 0.02,
+    "memory_signal_theta": false,
+    "memory_signal_aperture": false,
+    "xstar": {
+      "G_rad": 200.0,
+      "RH": 55.0,
+      "T_air": 22.0,
+      "occ": 0.5
+    },
+    "climate_tag": "SYNTHETIC_DEMO"
+  },
+  "T3": {
+    "treat_id": "T3",
+    "mean_abs_delta_theta": 90.0,
+    "mean_abs_delta_aperture": 1.0,
+    "max_abs_delta_theta": 90.0,
+    "max_abs_delta_aperture": 1.0,
+    "eps_theta_deg": 0.5,
+    "eps_aperture": 0.02,
+    "memory_signal_theta": true,
+    "memory_signal_aperture": true,
+    "xstar": {
+      "G_rad": 200.0,
+      "RH": 55.0,
+      "T_air": 22.0,
+      "occ": 0.5
+    },
+    "climate_tag": "SYNTHETIC_DEMO"
+  },
+  "T4": {
+    "treat_id": "T4",
+    "mean_abs_delta_theta": 50.625,
+    "mean_abs_delta_aperture": 0.5625,
+    "max_abs_delta_theta": 90.0,
+    "max_abs_delta_aperture": 1.0,
+    "eps_theta_deg": 0.5,
+    "eps_aperture": 0.02,
+    "memory_signal_theta": true,
+    "memory_signal_aperture": true,
+    "xstar": {
+      "G_rad": 200.0,
+      "RH": 55.0,
+      "T_air": 22.0,
+      "occ": 0.5
+    },
+    "climate_tag": "SYNTHETIC_DEMO"
+  }
+}
