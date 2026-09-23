@@ -1,0 +1,146 @@
+{
+  "T0": {
+    "gate_scores": {
+      "sensing": "N",
+      "memory": "N/A",
+      "feedback": "N",
+      "self_org": "N",
+      "adaptation": "N"
+    },
+    "evidence": {
+      "sensing": "corr_G_rad_mean_aperture=None (fixed state)",
+      "memory": "not instrumented in this demo (twohist only T2/T3/T4)",
+      "feedback": "memoryless or open-loop / fixed \u2014 no prior-state feedback",
+      "self_org": "no neighbor coupling (or not T6)",
+      "adaptation": "recovery_time_h=0.0 (fixed; not adaptive)"
+    },
+    "y_count": 0,
+    "label": "kinetic"
+  },
+  "T1": {
+    "gate_scores": {
+      "sensing": "N",
+      "memory": "N/A",
+      "feedback": "N",
+      "self_org": "N",
+      "adaptation": "N"
+    },
+    "evidence": {
+      "sensing": "corr_G_rad_mean_aperture=None (fixed state)",
+      "memory": "not instrumented in this demo (twohist only T2/T3/T4)",
+      "feedback": "memoryless or open-loop / fixed \u2014 no prior-state feedback",
+      "self_org": "no neighbor coupling (or not T6)",
+      "adaptation": "recovery_time_h=0.0 (fixed; not adaptive)"
+    },
+    "y_count": 0,
+    "label": "kinetic"
+  },
+  "T2": {
+    "gate_scores": {
+      "sensing": "Y",
+      "memory": "N",
+      "feedback": "N",
+      "self_org": "N",
+      "adaptation": "Y"
+    },
+    "evidence": {
+      "sensing": "corr_G_rad_mean_aperture=0.913199",
+      "memory": "twohist mean|\u0394\u03b8|=0.000000 (expect \u2264\u03b5=0.5); control OK=True",
+      "feedback": "memoryless or open-loop / fixed \u2014 no prior-state feedback",
+      "self_org": "no neighbor coupling (or not T6)",
+      "adaptation": "recovery_time_h=0.0"
+    },
+    "y_count": 2,
+    "label": "interactive"
+  },
+  "T3": {
+    "gate_scores": {
+      "sensing": "Y",
+      "memory": "Y",
+      "feedback": "Y",
+      "self_org": "N",
+      "adaptation": "Y"
+    },
+    "evidence": {
+      "sensing": "corr_G_rad_mean_aperture=0.913531",
+      "memory": "twohist mean|\u0394\u03b8|=90.000000 mean|\u0394a|=1.000000 \u03b5\u03b8=0.5",
+      "feedback": "hysteresis hold / coupling uses prior aperture",
+      "self_org": "no neighbor coupling (or not T6)",
+      "adaptation": "recovery_time_h=0.0"
+    },
+    "y_count": 4,
+    "label": "candidate"
+  },
+  "T4": {
+    "gate_scores": {
+      "sensing": "Y",
+      "memory": "Y",
+      "feedback": "Y",
+      "self_org": "N",
+      "adaptation": "Y"
+    },
+    "evidence": {
+      "sensing": "corr_G_rad_mean_aperture=0.901901",
+      "memory": "twohist mean|\u0394\u03b8|=50.625000 mean|\u0394a|=0.562500 \u03b5\u03b8=0.5",
+      "feedback": "hysteresis hold / coupling uses prior aperture",
+      "self_org": "no neighbor coupling (or not T6)",
+      "adaptation": "recovery_time_h=0.0"
+    },
+    "y_count": 4,
+    "label": "candidate"
+  },
+  "T5": {
+    "gate_scores": {
+      "sensing": "Y",
+      "memory": "N/A",
+      "feedback": "N",
+      "self_org": "N",
+      "adaptation": "Y"
+    },
+    "evidence": {
+      "sensing": "corr_G_rad_mean_aperture=0.94702",
+      "memory": "not instrumented in this demo (twohist only T2/T3/T4)",
+      "feedback": "memoryless or open-loop / fixed \u2014 no prior-state feedback",
+      "self_org": "no neighbor coupling (or not T6)",
+      "adaptation": "recovery_time_h=0.0"
+    },
+    "y_count": 2,
+    "label": "interactive"
+  },
+  "T6": {
+    "gate_scores": {
+      "sensing": "Y",
+      "memory": "N/A",
+      "feedback": "Y",
+      "self_org": "Y",
+      "adaptation": "Y"
+    },
+    "evidence": {
+      "sensing": "corr_G_rad_mean_aperture=0.915941",
+      "memory": "T6 inherits T3 hysteresis but twohist not required in runbook for T6",
+      "feedback": "hysteresis hold / coupling uses prior aperture",
+      "self_org": "Moran_I T6=0.0 vs T3=0.0; hyst_loop T6=308.39256 vs T3=173.340394",
+      "adaptation": "recovery_time_h=0.0"
+    },
+    "y_count": 4,
+    "label": "candidate"
+  },
+  "T7": {
+    "gate_scores": {
+      "sensing": "Y",
+      "memory": "N/A",
+      "feedback": "N",
+      "self_org": "N",
+      "adaptation": "Y"
+    },
+    "evidence": {
+      "sensing": "corr_RH_mean_aperture=0.999403",
+      "memory": "not instrumented in this demo (twohist only T2/T3/T4)",
+      "feedback": "memoryless or open-loop / fixed \u2014 no prior-state feedback",
+      "self_org": "no neighbor coupling (or not T6)",
+      "adaptation": "recovery_time_h=0.0"
+    },
+    "y_count": 2,
+    "label": "interactive"
+  }
+}
