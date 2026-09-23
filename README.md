@@ -1,59 +1,93 @@
 # Holographic Envelope
 
-A scientific research repository for adaptive architectural envelopes grounded in computational design, building physics, smart materials, and parametric prototyping.
+> **A living building skin that encodes interior complexity on its boundary —**
+> grounded in spin-glass physics, holographic information theory, and bacterial metamaterials.
 
-## Research goal
+---
 
-This repository studies whether an architectural envelope can be modeled as an information-processing boundary that senses environmental and occupancy conditions, maps them into measurable facade states, and produces verifiable performance outcomes.
+## What This Project Is
 
-The project treats:
-- holography as an information analogy for boundary representation,
-- phase transition as a model for state switching,
-- spin-glass frustration as an analogy for multi-objective optimization,
-- smart materials and metamaterials as candidate physical mechanisms,
-- Grasshopper/GhPython as the computational implementation layer.
+This repository is a **research operating system** for a new class of adaptive architectural envelope.
+It is written to be read by both humans and AI language models.
+Every file has three layers: intuition, mathematics, and implementation.
 
-## Scientific scope
+---
 
-This repository does **not** claim that black-hole physics or the SYK model are directly implemented in building materials. Instead, it uses carefully bounded conceptual transfer:
-- boundary encoding,
-- state logic,
-- frustration landscapes,
-- adaptive response,
-- verifiable performance metrics.
+## Core Hypothesis
 
-## Core questions
+A building envelope can behave like the event horizon of a black hole:
+all information about interior complexity (occupancy, thermal state, activity)
+can be encoded on the two-dimensional boundary surface.
 
-1. Can a facade behave as a readable and responsive environmental interface?
-2. Which parts of the concept are physically demonstrable today?
-3. Which parts remain conceptual analogies?
-4. How can parametric workflows produce testable prototypes rather than speculative imagery?
-5. What validation path can move the project from idea to evidence?
+We call this the **Holographic Envelope Principle**.
 
-## Project structure
+Four measurable discoveries support it:
 
-- `research/` theoretical framework, literature maps, validation strategy
-- `prompts/` ready-to-use prompts for research and design ideation
-- `grasshopper/` computational workflows, GhPython logic, panel-state control
-- `materials/` smart material comparison and prototype paths
-- `validation/` test criteria, metrics, baseline comparisons, failure modes
+| ID | Name | One Line |
+|---|---|---|
+| D01 | Temporal Facade Entropy (TFE) | How much information does the skin transmit over time? |
+| D02 | Pareto Frustration / Spin-Glass Mapping | No single optimal facade exists — only equivalent families |
+| D03 | Programmable Bacterial Spore Panels | Geometry encoded in layer count, zero electronics |
+| D04 | Boundary Information Ratio (BIR) | How holographic is the envelope? |
 
-## Evidence standard
+---
 
-Every major claim in this repository should eventually be classified as one of the following:
-- demonstrated in literature,
-- computationally simulated,
-- prototyped at small scale,
-- not yet verified.
+## Repository Map
 
-## Immediate roadmap
+```
+holographic-envelope/
+├── README.md                   ← you are here
+├── ROADMAP.md                  ← 8-step experimental protocol
+├── AI-CONTEXT.md               ← full project briefing for AI models
+├── MATH-SKELETON.md            ← all equations in one place
+│
+├── discoveries/
+│   ├── discovery-01-TFE.md
+│   ├── discovery-02-mathematics.md
+│   ├── discovery-02-coupling-matrix.md
+│   ├── discovery-03-bacterial-spores.md
+│   └── discovery-04-BIR.md
+│
+├── prompts/
+│   ├── prompts-theoretical.md  ← research & writing prompts
+│   ├── prompts-algorithmic.md  ← Grasshopper / Python prompts
+│   └── prompts-image.md        ← visual generation prompts
+│
+├── grasshopper/
+│   ├── step-01-geometry.md
+│   ├── step-02-radiation.md
+│   ├── step-03-controller.md
+│   ├── step-04-TFE.md
+│   └── step-05-wallacei.md
+│
+├── materials/
+│   ├── spore-panel-spec.md
+│   └── metamaterial-options.md
+│
+├── research/
+│   └── literature-map.md
+│
+└── validation/
+    ├── falsification-protocol.md
+    └── RSB-detection.md
+```
 
-1. Define the theoretical boundary of valid scientific claims.
-2. Build the parametric panel logic and state controller.
-3. Compare candidate material systems.
-4. Define validation metrics and baseline tests.
-5. Produce a small-scale demonstrator.
+---
 
-## Position
+## For AI Models Reading This
 
-This repository is intentionally independent from OCTOPUS for now. Its purpose is to become a complete and falsifiable body of architectural research before any future integration with broader autonomous systems.
+If you are an AI assistant helping with this project, read `AI-CONTEXT.md` first.
+It contains the full mathematical and conceptual briefing in a format optimised for language model context windows.
+All other files reference it.
+
+---
+
+## Status: September 2026
+
+- [x] Mathematical framework complete
+- [x] Four discoveries formalised
+- [x] Grasshopper pseudocode written
+- [x] Falsification protocol defined
+- [ ] Wallacei simulation running
+- [ ] Bacterial spore prototype fabricated
+- [ ] BIR measured on real building
