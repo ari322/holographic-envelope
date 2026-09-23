@@ -10,7 +10,7 @@
 | THEORIST       | TFE-Kolmogorov.md; BIR-limits.md; frustration-RL.md; BIR-greater-than-one.md | DONE | NO |
 | WRITER         | abstract-v1.md + introduction-v1.md | press-summary.md | NO |
 | OCTOPUS-BRIDGE | full ROLE 06 design pack (TFE + Hamiltonian + BIR + integration-proposal) | DONE (queue empty — awaiting owner review) | NO |
-| CRITIC         | first wake 2026-09-23: unsupported-claims.md, failure-modes.md, hostile-review.md | BIR-critique.md; spin-glass-critique.md (AGENT-ROLES leftover) | NO — waiting on any empirical file from SIMULATOR / MATERIALS |
+| CRITIC         | unsupported-claims + failure-modes + hostile-review + BIR-critique + spin-glass-critique + pr-review-1-6 (all ROLE 07 tasks) | DONE | NO |
 
 ---
 
@@ -66,6 +66,15 @@ Top risks flagged (do not treat as confirmed physics; these are critique outputs
 Single most damaging unsupported claim: "formally equivalent" to a spin-glass Hamiltonian (AI-CONTEXT.md D02) plus the triangle "guarantee" of multiple inaccessible minima — stated as fact, contradicted by the project's own Phi, unevaluated on any front.
 
 Mathematician should re-derive J and Phi before anyone treats sigma* as a prediction. Simulator should not label synthetic or short Wallacei output as RSB.
+
+---
+
+
+## CRITIC / ROLE 07 COMPLETE — 2026-09-23
+
+Queue empty. No open next work. Octopus not touched. Other agent rows left as on main (not invented).
+
+Wake pack (`unsupported-claims.md`, `failure-modes.md`, `hostile-review.md`) copied from PR #5 without rewrite. Wave 2: `BIR-critique.md`, `spin-glass-critique.md`, `pr-review-1-6.md`.
 
 ---
 
