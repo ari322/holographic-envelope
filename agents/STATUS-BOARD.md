@@ -6,7 +6,7 @@
 |-------|---------------|-----------|--------|
 | MATHEMATICIAN  | reparameterisation.md (queue complete: coupling + frustration + Sigma + reparam) | DONE | NO |
 | SIMULATOR      | — (not started) | grasshopper-complete.md | NO |
-| MATERIALS      | — (not started) | spore-data-survey.md | NO |
+| MATERIALS      | spore-data-survey.md + fabrication-protocol.md | test-protocol.md | NO |
 | THEORIST       | TFE-Kolmogorov.md; BIR-limits.md; frustration-RL.md; BIR-greater-than-one.md | DONE | NO |
 | WRITER         | abstract-v1.md + introduction-v1.md | press-summary.md | NO |
 | OCTOPUS-BRIDGE | full ROLE 06 design pack (TFE + Hamiltonian + BIR + integration-proposal) | DONE (queue empty — awaiting owner review) | NO |
