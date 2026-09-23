@@ -1,0 +1,47 @@
+# CROSS-SCALE transfer map — exploration atom (not a finding)
+# Linked note: CROSS-SCALE/tfe-bir-frustration-to-p1-array.md
+id: IS-0009
+title: "TFE / BIR / frustration functionals onto the P1 4x4 array"
+scale: cross-scale
+claim_type: inspiration
+candidate_principle: []
+research_question: "Which already-written TFE, BIR, and gate-frustration statements can be computed on a 16-cell P1 log without importing AdS/CFT, RSB, or Kolmogorov as tested results?"
+hypothesis: "If a driven 4x4 and its homogeneous and random controls are logged as specified in ROADMAP P1, then TFE_total (bits^2) separates flat from mixed arrays, BIR_enc separates interior-coupled from climate/noise arrays, and a three-knob (eps, Delta_s, wr) sweep shows pairwise tracking/smoothness/priority conflict — vs those controls."
+mechanism: "Histogram Shannon product (TFE); climate-conditional mutual information (BIR_enc); hysteresis-gate hold vs slew vs radiation weight (formal-model B(t)). Not a spin-glass, not a CFT, not K."
+inputs:
+  - radiation
+  - RH
+  - temperature
+  - occupancy_proxy
+  - previous_state
+outputs:
+  - angle
+  - aperture
+  - response_time
+  - recovery_time
+  - hysteresis
+controls:
+  - homogeneous_array
+  - random_array
+measurements:
+  - H_space
+  - H_time
+  - TFE_total_bits_squared
+  - BIR_raw_uncapped
+  - BIR_enc
+  - hold_count
+  - response_time
+  - recovery_time
+falsification:
+  - "TFE(homogeneous) >= TFE(driven) on one shared chronicle and frozen alphabet"
+  - "BIR_enc(random) >= BIR_enc(driven) on occupied hours after climate residual"
+  - "A direction in (eps, Delta_s, wr) jointly improves tracking, chatter, and wr-priority"
+  - "High eps increases actuation or state-space coverage (inverted-epsilon fails)"
+uncertainty:
+  - "N=16 makes H_space high-variance; bin edges and eta must be pre-registered"
+  - "No in-repo 4x4 CSV; J-arch-jacobian-mismatch and frustration-convention-mismatch stay OPEN"
+  - "Critic unsupported-claims.md is pending reading, not re-run"
+status: proposed
+artifacts:
+  - CROSS-SCALE/tfe-bir-frustration-to-p1-array.md
+  - agents/theorist/cross-scale-p1-transfer.md
