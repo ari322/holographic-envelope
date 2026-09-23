@@ -7,7 +7,7 @@
 | MATHEMATICIAN  | — (not started) | coupling-matrix-derivation.md | NO |
 | SIMULATOR      | — (not started) | grasshopper-complete.md | NO |
 | MATERIALS      | — (not started) | spore-data-survey.md | NO |
-| THEORIST       | TFE-Kolmogorov.md; BIR-limits.md; frustration-RL.md (wake 2026-09-23) | BIR-greater-than-one.md | NO |
+| THEORIST       | TFE-Kolmogorov.md; BIR-limits.md; frustration-RL.md; BIR-greater-than-one.md | DONE | NO |
 | WRITER         | — (not started) | abstract-v1.md | NO |
 | OCTOPUS-BRIDGE | — (not started) | TFE-for-agents.md | NO |
 | CRITIC         | — (not started) | unsupported-claims.md | NO |
@@ -31,9 +31,20 @@ Conflict detected: NONE raised as a formal conflict file. Definitional tension n
 Current task: ROLE 04 task 3 complete. Task 4 not started.
 Last output:
 - `agents/theorist/frustration-RL.md` — mapping of frustrated triangle `(eps, Delta_s, wr)` to a three-way exploration-exploitation dilemma (inverted-epsilon hold vs track; step-size; radiation-channel prior). Vanilla `eps_greedy` is a one-parameter collapse, not the native object. Phi-product vs AFM-triangle tension recorded, not repaired. RSB still unconfirmed.
-Next task: `agents/theorist/BIR-greater-than-one.md` (ROLE 04 task 4).
+Next task at that step: `agents/theorist/BIR-greater-than-one.md` (ROLE 04 task 4).
 Blocked by: NONE. Critic `unsupported-claims.md` still pending; no new empirical claims.
 Conflict detected: NONE as a formal conflict file. Additional definitional tension noted inside frustration-RL (MATH-SKELETON `Phi = +1` for all-positive J vs D02 verbal AFM-triangle; Hamiltonian sign vs "J > 0 means anti-align") — not silently repaired.
+
+---
+
+## THEORIST wake — 2026-09-23 (task 4; ROLE 04 complete)
+
+Current task: ROLE 04 tasks 1-4 complete. Queue empty.
+Last output:
+- `agents/theorist/BIR-greater-than-one.md` — speculative unpacking of `BIR > 1`: not super-holographic; readings are over-response (D04), climate leak, empty-interior singularity, alphabet/TFE-unit artefact, or autonomous skin residual. `BIR_enc` cannot exceed 1. MATH-SKELETON cap vs Discovery 04 overshoot fork recorded, not repaired.
+Next task: DONE (no remaining ROLE 04 files).
+Blocked by: NONE. Critic `unsupported-claims.md` still pending; no new empirical claims.
+Conflict detected: NONE as a formal conflict file.
 
 ---
 
