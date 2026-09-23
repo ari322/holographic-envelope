@@ -5,7 +5,7 @@
 | Agent | Last completed | Next task | Blocked |
 |-------|---------------|-----------|--------|
 | MATHEMATICIAN  | — (not started) | coupling-matrix-derivation.md | NO |
-| SIMULATOR      | Task 2: facade-sim.py + SYNTHETIC Pareto + rsb-detection.py (2026-09-23) | grasshopper-complete.md (Task 1) | NO |
+| SIMULATOR      | Role 02 pack: grasshopper-complete.md + facade-sim.py + rsb-detection.py + SYNTHETIC synthetic-pareto.json (2026-09-23) | DONE | NO |
 | MATERIALS      | — (not started) | spore-data-survey.md | NO |
 | THEORIST       | — (not started) | TFE-Kolmogorov.md | NO |
 | WRITER         | — (not started) | abstract-v1.md | NO |
@@ -22,15 +22,18 @@
 
 ---
 
-## SIMULATOR Task 2 notes (2026-09-23)
+## SIMULATOR Role 02 notes (2026-09-23) — queue empty
 
-Files added under `agents/simulator/`:
+All four Role 02 deliverables are in `agents/simulator/`. Next task = DONE.
 
-- `facade-sim.py` — standalone controller. Inputs: EPW-style weather + `sigma`. Outputs: `panel_angle_series`, `f1`–`f4`, `TFE_total`.
-- `rsb-detection.py` — pairwise `d = ||ga-gb||_2 / sqrt(6)`, Hartigan dip, GMM+BIC on `P_arch(d)`.
-- `generate_synthetic_pareto.py` — writes the fixture (5 runs x 50 solutions, seeds 42/137/256/891/1024).
-- `synthetic-pareto.json` — **SYNTHETIC** test fixture only.
-- `README.md`, `requirements.txt`
+| File | Role 02 task |
+|------|----------------|
+| `grasshopper-complete.md` | Task 1 — full 5-step GH node sequence (02/03/05 filled in) |
+| `facade-sim.py` | Task 2 — standalone controller |
+| `rsb-detection.py` | Task 3 — GMM + Hartigan dip |
+| `synthetic-pareto.json` | Task 4 — **SYNTHETIC** 5x50 fixture |
+
+Also: `generate_synthetic_pareto.py`, `README.md`, `requirements.txt`.
 
 How to run:
 

@@ -469,6 +469,7 @@ def compute_f1_radiation_kwh_m2(
 
     Proxy for Ladybug LB Incident Radiation mean (prompt A02). Hourly W/m2
     * opening * (1 - depth_shade), then Wh -> kWh. Not a Ladybug result.
+    ``opening`` must be shape (n_times, n_panels), matching weather.radiation.
     """
     shade = _depth_shade_factor(depth_mm)
     transmitted = weather.radiation * opening * (1.0 - shade)
@@ -485,7 +486,7 @@ def compute_f2_daylight_deficit(
 
     Occupied hours: 8-18 weekdays (prompt A02). Lux proxy:
         lux = radiation_W_m2 * opening * luminous_efficacy
-    Not a Honeybee UDI result.
+    ``opening`` must be shape (n_times, n_panels). Not a Honeybee UDI result.
     """
     hour = weather.hour.reshape(-1)
     weekday = weather.weekday.reshape(-1)
@@ -612,9 +613,10 @@ def simulate(
     tfe_states = angles / 90.0
     tfe_total, h_space, h_time = compute_TFE(tfe_states)
 
-    opening = _effective_opening(states, genes["a"], genes["r"])
-    f1 = compute_f1_radiation_kwh_m2(wx, opening, genes["d"])
-    f2 = compute_f2_daylight_deficit(wx, opening)
+    # weather fields are (T, N); controller series are (N, T)
+    opening_TN = _effective_opening(states.T, genes["a"], genes["r"])
+    f1 = compute_f1_radiation_kwh_m2(wx, opening_TN, genes["d"])
+    f2 = compute_f2_daylight_deficit(wx, opening_TN)
     f3 = compute_f3_unique_geometries(genes, layer_counts=layer_counts)
     f4 = compute_f4_actuation_events_per_day(states, T)
 
@@ -659,12 +661,12 @@ def simulate_static(
     states = clamp(states)
     tfe_states = angles / 90.0
     tfe_total, h_space, h_time = compute_TFE(tfe_states)
-    opening = _effective_opening(states, genes["a"], genes["r"])
+    opening_TN = _effective_opening(states.T, genes["a"], genes["r"])
     return SimulationResult(
         panel_angle_series=angles,
         panel_state_series=states,
-        f1=compute_f1_radiation_kwh_m2(wx, opening, genes["d"]),
-        f2=compute_f2_daylight_deficit(wx, opening),
+        f1=compute_f1_radiation_kwh_m2(wx, opening_TN, genes["d"]),
+        f2=compute_f2_daylight_deficit(wx, opening_TN),
         f3=1,
         f4=0.0,
         TFE_total=tfe_total,

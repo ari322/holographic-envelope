@@ -9,6 +9,7 @@ No Grasshopper. No Rhino. Dependencies: `numpy`, `scipy`, `scikit-learn`.
 
 | File | What it is |
 |------|------------|
+| `grasshopper-complete.md` | Full 5-step Grasshopper node sequence (02/03/05 filled in) |
 | `facade-sim.py` | Facade controller + TFE + f1–f4 |
 | `rsb-detection.py` | Hartigan dip + GMM on pairwise gene distances |
 | `generate_synthetic_pareto.py` | Writes the SYNTHETIC Pareto fixture |
