@@ -134,3 +134,5 @@ All seven ROLE queues are now DONE on the board. Conflict log below is unchanged
 ## Human Notes
 
 _Add notes here when reviewing agent outputs._
+
+STATUS-BOARD on main may lag open PRs #5–#11; program SoT for mission is now CHARTER.md.

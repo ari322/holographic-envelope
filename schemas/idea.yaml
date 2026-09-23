@@ -1,0 +1,17 @@
+# Standard idea / PR / paper atom — required for non-exploration claims
+id: IS-0000
+title: ""
+scale: material # material | cell | array | boundary | biological | computational | cross-scale
+claim_type: inspiration # inspiration | formal_model | tested_analogy | validated_result
+candidate_principle: []
+research_question: ""
+hypothesis: "" # If X, then Y vs control Z
+mechanism: "" # claimed mechanism, not mere resemblance
+inputs: []
+outputs: []
+controls: []
+measurements: []
+falsification: []
+uncertainty: []
+status: proposed # proposed | running | supported | refuted | inconclusive
+artifacts: []

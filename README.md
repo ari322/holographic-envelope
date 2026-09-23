@@ -1,5 +1,7 @@
 # Holographic Envelope
 
+**Program source of truth (mission, gates, season):** [`CHARTER.md`](CHARTER.md). Holographic Envelope is the first experimental body; Intelligent Superstructures is the strategic mission. Octopus is a computational exemplar only — not the owner of this repository.
+
 > **A living building skin that encodes interior complexity on its boundary —**
 > grounded in spin-glass physics, holographic information theory, and bacterial metamaterials.
 
@@ -37,7 +39,8 @@ Four measurable discoveries support it:
 ```
 holographic-envelope/
 ├── README.md                   ← you are here
-├── ROADMAP.md                  ← 8-step experimental protocol
+├── CHARTER.md                  ← program SoT (mission, intelligence gate, pillars)
+├── ROADMAP.md                  ← discovery-machine season (P0–P5)
 ├── AI-CONTEXT.md               ← full project briefing for AI models
 ├── MATH-SKELETON.md            ← all equations in one place
 │
