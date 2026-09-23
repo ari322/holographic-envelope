@@ -1,0 +1,32 @@
+id: IS-0005
+title: "SMA-like hysteresis aperture as material-memory stand-in before coupons"
+scale: material
+claim_type: inspiration
+candidate_principle:
+  - Material hysteresis can supply memory channel for intelligence gate
+research_question: "Can a numerical SMA-style hysteresis operator on temperature reproduce two-history memory metrics comparable to RH hygromorph model?"
+hypothesis: "If panel angle = hysteretic map of T (Prandtl-Ishlinskii / simple backlash), then two-history tests pass similarly to RH hygromorph model under matched loop area."
+mechanism: "Phenomenological hysteresis (not full MAS thermodynamics in P1)"
+inputs:
+  - temperature chronicle
+  - hysteresis params
+outputs:
+  - angle
+  - loop area
+  - two-history delta
+controls:
+  - linear gain no hysteresis
+  - deadzone only
+measurements:
+  - same as IS-0001
+falsification:
+  - If linear gain passes two-history, measurement flawed
+  - If SMA model never differs from deadzone, loop shape irrelevant
+uncertainty:
+  - numerical operator ≠ physical Nitinol coupon
+status: proposed
+artifacts:
+  - protocols/P1-TWO-HISTORY.md
+  - treatment T3 path
+p_stage: P1-P2
+stamp: 2026-09-23 ~19:07 AEST

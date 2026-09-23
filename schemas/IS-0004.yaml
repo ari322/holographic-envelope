@@ -1,0 +1,40 @@
+id: IS-0004
+title: "Boundary mutual information tracks interior better than marginal BIR ratio"
+scale: boundary
+claim_type: formal_model
+candidate_principle:
+  - Encoding is mutual information (and lag), not H_boundary/H_interior alone
+research_question: "On a simulated zone+4×4 boundary, does I(interior; boundary) with lag outperform BIR as a predictor of reconstructibility?"
+hypothesis: "If we compute I(Z_t; A_{t+τ}) over lag τ, then max_τ I predicts interior-state classification accuracy better than BIR=H_A/H_Z; and climate-residualised I drops when skin is weather-driven only."
+mechanism: "Discrete MI on binned zone sensors vs aperture field; residualisation against climate features"
+inputs:
+  - zone_temp
+  - zone_occ
+  - CO2_proxy
+  - aperture_field
+  - EPW or SYNTHETIC climate
+outputs:
+  - I(Z;A;τ)
+  - BIR
+  - classifier accuracy
+  - climate residual I
+controls:
+  - fixed boundary
+  - random boundary
+  - climate-only controller
+measurements:
+  - MI curves
+  - BIR time series
+  - confusion matrices
+falsification:
+  - If BIR ranks regimes identically to MI and classifier, MI not needed for P4 triage
+  - If I≈0 whenever BIR high, BIR-overclaim confirmed (proud)
+uncertainty:
+  - alphabet choice
+  - small sample bias of MI estimators
+status: proposed
+artifacts:
+  - pending P4 zone instrumentation
+p_stage: P4
+note: "P1 array logs are useful inputs later; do not claim MI results from P1 alone."
+stamp: 2026-09-23 ~19:07 AEST

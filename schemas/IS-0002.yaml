@@ -1,0 +1,37 @@
+id: IS-0002
+title: "Heterogeneous thresholds outperform homogeneous array under multi-objective proxy"
+scale: array
+claim_type: formal_model
+candidate_principle:
+  - Spatial heterogeneity can encode more useful boundary diversity than uniform genes
+research_question: "On a 4×4 array, does a heterogeneous threshold field beat a homogeneous field on a simple multi-proxy score?"
+hypothesis: "If cells draw eps from a designed distribution (not random noise), then seasonal proxy score (radiation blocked + daylight openness + actuation cost) exceeds homogeneous and pure-random controls."
+mechanism: "Quenched heterogeneous local parameters; no global optimiser during run (search may set initial map)"
+inputs:
+  - climate chronicle
+  - eps_map
+  - neighbor visibility optional
+outputs:
+  - per-cell angle
+  - array mean aperture
+  - proxy f1/f2/f4
+controls:
+  - homogeneous eps
+  - i.i.d. random eps same mean/variance
+  - static shade
+measurements:
+  - proxy integrals
+  - spatial entropy H_space
+  - actuation count
+falsification:
+  - If heterogeneous ≤ homogeneous on all proxies, heterogeneity-not-helpful
+  - If random ≥ designed hetero, only variance matters not structure
+uncertainty:
+  - proxy ≠ Ladybug truth
+  - small N=16 finite-size
+status: proposed
+artifacts:
+  - protocols/P1-RUNBOOK.md
+  - treatments T4 vs T2/T5
+p_stage: P1
+stamp: 2026-09-23 ~19:07 AEST

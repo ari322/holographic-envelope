@@ -1,0 +1,37 @@
+id: IS-0003
+title: "Neighbor coupling yields collective pattern beyond sum of independent cells"
+scale: array
+claim_type: formal_model
+candidate_principle:
+  - Self-organization requires interaction; independence is the null
+research_question: "Does local neighbor coupling create spatial correlation / recovery not explained by 16 independent cells?"
+hypothesis: "If each cell updates with weight on neighbor mean aperture, then spatial autocorrelation and post-perturbation recovery differ from independent control at same climate."
+mechanism: "Discrete-time local averaging / flocking-like alignment with climate forcing (tested_analogy to Boids/Vicsek, not proof)"
+inputs:
+  - climate
+  - neighbor_angles
+  - coupling_gain k
+outputs:
+  - angle field
+  - Moran I or corr length
+  - recovery time after clamp
+controls:
+  - k=0 independent
+  - global lockstep controller
+  - random shuffle of neighbor graph
+measurements:
+  - corr(r)
+  - H_space
+  - recovery_half_life
+  - TFE product on short window
+falsification:
+  - If metrics match k=0, no self-organization
+  - If only global lockstep wins, local coupling unnecessary
+uncertainty:
+  - aliasing of climate spatial gradient as false coupling
+status: proposed
+artifacts:
+  - protocols/P1-RUNBOOK.md
+  - treatment T6 vs T3
+p_stage: P1
+stamp: 2026-09-23 ~19:07 AEST
