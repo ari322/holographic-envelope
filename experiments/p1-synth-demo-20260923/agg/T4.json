@@ -1,0 +1,35 @@
+{
+  "run_id": "p1-20260923-synth-demo-v1",
+  "treat_id": "T4",
+  "climate_tag": "SYNTHETIC_DEMO",
+  "neighbor_graph": "von_neumann_4",
+  "theta_units": "deg",
+  "K_bins": 5,
+  "eps_theta_deg": 0.5,
+  "eps_aperture": 0.02,
+  "response_time_h": 0.0,
+  "recovery_time_h": 0.0,
+  "hysteresis_loop_area": 165.756271,
+  "Moran_I": 0.037037,
+  "corr_G_rad_mean_aperture": 0.901901,
+  "corr_RH_mean_aperture": 0.328073,
+  "two_history_delta_theta": 50.625,
+  "two_history_delta_aperture": 0.5625,
+  "gate_scores": {
+    "sensing": "Y",
+    "memory": "Y",
+    "feedback": "Y",
+    "self_org": "N",
+    "adaptation": "Y"
+  },
+  "notes": "SYNTHETIC_DEMO aggregates computed from CSV; not validated_result",
+  "gate_evidence": {
+    "sensing": "corr_G_rad_mean_aperture=0.901901",
+    "memory": "twohist mean|\u0394\u03b8|=50.625000 mean|\u0394a|=0.562500 \u03b5\u03b8=0.5",
+    "feedback": "hysteresis hold / coupling uses prior aperture",
+    "self_org": "no neighbor coupling (or not T6)",
+    "adaptation": "recovery_time_h=0.0"
+  },
+  "gate_y_count": 4,
+  "gate_label": "candidate"
+}
