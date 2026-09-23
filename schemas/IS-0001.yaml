@@ -1,0 +1,45 @@
+# Idea atom — measured-array candidate (local SoT mirror)
+# Canonical narrative twin: PRINCIPLES-candidates/IS-0001.md
+id: IS-0001
+title: "Local-rule hysteresis beats memoryless threshold on same climate drive"
+scale: array
+claim_type: formal_model
+candidate_principle:
+  - Material/spatial memory requires history-dependent map, not instantaneous lookup
+research_question: "Does a hysteretic local aperture rule produce different present angles than a memoryless threshold under identical final inputs?"
+hypothesis: "If each cell uses rising/falling thresholds (eps_up != eps_down), then after two distinct RH/radiation histories that end at the same input vector, present aperture differs vs memoryless control by > measurement noise."
+mechanism: "Bilinear thresholds on radiation/RH with state carry-over; discrete panel angle bins"
+inputs:
+  - radiation
+  - RH
+  - temperature
+  - occupancy_proxy
+  - previous_angle
+outputs:
+  - angle
+  - aperture
+  - response_time
+  - recovery_time
+controls:
+  - memoryless threshold (eps_up=eps_down)
+  - fixed open
+  - fixed closed
+measurements:
+  - angle time series
+  - hysteresis loop area
+  - two-history delta aperture
+  - TFE_space proxy on 4x4
+falsification:
+  - If two-history delta ≈ 0 within noise for hysteretic rule, memory claim fails
+  - If memoryless matches hysteretic on all metrics, hysteresis not needed for P1
+uncertainty:
+  - sensor noise
+  - binning artefacts
+  - fatigue vs true memory (defer full P2 separation)
+status: proposed
+artifacts:
+  - protocols/P1-RUNBOOK.md
+  - protocols/P1-TWO-HISTORY.md
+  - protocols/P1-GATE-SCORECARD.md
+p_stage: P1
+stamp: 2026-09-23 ~19:07 AEST
