@@ -1,18 +1,18 @@
 DESIGN DOCUMENT — Octopus Bridge folder index (FUTURE only)
 
-This folder holds ROLE 06 design proposals. It maps existing D01 / D02 mathematics
-onto agent coordination. Nothing here is implemented. Nothing here writes to an
-Octopus repository, or to Octopus code, architecture, or config.
+This folder holds ROLE 06 design proposals. It maps existing D01 / D02 / D04
+mathematics onto agent coordination. Nothing here is implemented. Nothing here
+writes to an Octopus repository, or to Octopus code, architecture, or config.
 
 Files:
 
     TFE-for-agents.md           Way 1 — TFE on observable agent traces
     hamiltonian-for-agents.md   Way 2 — H_facade shape as H_coord
+    BIR-for-agents.md           Way 3 — BIR as boundary / interior ratio
+    integration-proposal.md     when (not now) to connect the two systems
 
-Not in this change (ROLE 06 remaining tasks):
-
-    BIR-for-agents.md           Way 3 — next
-    integration-proposal.md     final ROLE 06 output
+ROLE 06 tasks 1–5 in this folder are written. Next step is owner review of
+the pack, not implementation.
 
 Rules for this folder:
 
@@ -20,5 +20,6 @@ Rules for this folder:
     - Label mappings as FUTURE DESIGN / ANALOGY
     - Include a falsification path for any claim-like mapping
     - Plain ASCII math
-    - Do not claim D01/D02 validated or RSB confirmed
+    - Do not claim D01–D04 validated or RSB confirmed
     - Do not invent a fifth discovery
+    - Do not implement the Octopus connection
