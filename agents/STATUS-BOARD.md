@@ -6,7 +6,7 @@
 |-------|---------------|-----------|--------|
 | MATHEMATICIAN  | — (not started) | coupling-matrix-derivation.md | NO |
 | SIMULATOR      | — (not started) | grasshopper-complete.md | NO |
-| MATERIALS      | — (not started) | spore-data-survey.md | NO |
+| MATERIALS      | spore-data-survey.md + fabrication-protocol.md | test-protocol.md | NO |
 | THEORIST       | — (not started) | TFE-Kolmogorov.md | NO |
 | WRITER         | — (not started) | abstract-v1.md | NO |
 | OCTOPUS-BRIDGE | — (not started) | TFE-for-agents.md | NO |
